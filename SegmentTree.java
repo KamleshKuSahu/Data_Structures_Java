@@ -14,7 +14,7 @@ public class SegmentTree {
 			return a[in]=make(ar,i,m,2*in+1)+make(ar,m+1,j,2*in+2);
 		}
 	}
-	public int solve(int i,int j) {
+	public int get(int i,int j) {
 		return get(i,j,0,size-1,0);
 	}
 	private int get(int i,int j,int x,int y,int in) {
